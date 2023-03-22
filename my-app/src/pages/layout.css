@@ -1,0 +1,53 @@
+.navigator {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #ff66a1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  .navBarLink {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .navBarLink:hover {
+    background-color: #ff6699;
+    border-radius: 13px;
+  }
+  
+  .dropDownBtn {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropDownBtn:hover .dropContent {
+    display: block;
+  }
+  
+  .dropContent {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 25px;
+    background-color: #66e8ff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .mainLogo {
+    font-weight: bolder;
+    font-size: x-large;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  

@@ -1,0 +1,1 @@
+export const SERVER:string = "https://gymboree-back.onrender.com/";
