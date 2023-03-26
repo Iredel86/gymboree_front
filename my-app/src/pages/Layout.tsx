@@ -55,7 +55,7 @@ const Layout = () => {
                     <Link className="navBarLink mainLogo" to="/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" className="bi bi-asterisk" viewBox="0 0 16 16">
                         </svg>
-                        Welcome to "World of Kids"
+                        Welcome to "GymboRee"
                     </Link>
                     <Link className="navBarLink" to="/departments">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" className="bi bi-grid" viewBox="0 0 16 16">
@@ -69,9 +69,9 @@ const Layout = () => {
                             {currentUser ? " Hi " + currentUser : "Account"}
                         </Link>
                         {currentUser && <div className="dropContent">
-                            <Link className="navBarLink " to="/myorders">My Orders</Link>
+                            <Link className="myacount" to="/myorders">My Orders</Link>
                             <br /><br />
-                            <Link className="navBarLink " to="/logout">Logout</Link>
+                            <Link className="myacount" to="/logout">Logout</Link>
                         </div>}
                     </div>
                     <Link className="navBarLink" to="/cart">

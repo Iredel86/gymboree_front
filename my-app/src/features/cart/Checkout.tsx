@@ -13,7 +13,7 @@ const Checkout = () => {
     }, [cart])
 
     return (
-        <div><PayPalScriptProvider options={{ "client-id": "Acv35MxVCkOUiuPZvxSGnEhK7-RGjVWQvxtxbhDpALeyCVBoa5o3gnRSYvb9aiYCdZaz9VjPkjQOcGef" }}>
+        <div><PayPalScriptProvider options={{ "client-id": "AS9VBFG_SqLZu_2kUwJz94bhv_VEq_wSEKqrHEjTEm8T6z0jhrpMotEFy_HkukFMOd3v1bMgHpcV02YZ" }}>
             <PayPalButtons
                 createOrder={(data, actions) => {
                     return actions.order.create({

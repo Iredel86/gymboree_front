@@ -56,12 +56,34 @@
 }
   
   .order_summary {
-    width: 39%;
+    width: 300px;
     background-color: #f5f5f5;
     text-align: center;
     position: fixed;
-    height: 250px;
+    height: 200px;
     right: 15px;
   }
+
+  .checkoutbar {
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 5px 30px;
+  margin: -2px 60px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  }
+
+  .checkoutbar:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
   
-  
+  .checkoutbar:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }

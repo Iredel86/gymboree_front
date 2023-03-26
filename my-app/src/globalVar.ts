@@ -1,1 +1,2 @@
-export const SERVER:string = "https://gymboree-back.onrender.com/";
+export const SERVER:string = "https://gymboree.onrender.com/";
+

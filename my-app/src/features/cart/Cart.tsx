@@ -7,6 +7,7 @@ import { remove_prod_cart } from "./cartSlice"
 import { SERVER } from '../../globalVar'
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { Link, redirect } from 'react-router-dom'
+import { fontSize } from '@mui/system'
 
 const Cart = () => {
   const cart = useSelector(selectCart)
@@ -56,15 +57,8 @@ const Cart = () => {
         <h3>Summary</h3>
         <h5>Total {total}$</h5>
 
-        {!flag ? <div onClick={handlecheckout} style={{
-          backgroundColor: 'blue',
-          margin: "-5px 200px",
-          padding: "5px 30px",
-          borderRadius: '10px',
-          color: '#FFF',
-          cursor: 'pointer'
-        }}
-        >Checkout</div> : <PayPalScriptProvider options={{ "client-id": "Acv35MxVCkOUiuPZvxSGnEhK7-RGjVWQvxtxbhDpALeyCVBoa5o3gnRSYvb9aiYCdZaz9VjPkjQOcGef" }}>
+        {!flag ? <div className='checkoutbar' onClick={handlecheckout} 
+        >Checkout</div> : <PayPalScriptProvider options={{ "client-id": "AS9VBFG_SqLZu_2kUwJz94bhv_VEq_wSEKqrHEjTEm8T6z0jhrpMotEFy_HkukFMOd3v1bMgHpcV02YZ" }}>
           <PayPalButtons
             createOrder={(data, actions) => {
               return actions.order.create({

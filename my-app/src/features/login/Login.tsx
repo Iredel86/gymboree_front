@@ -41,7 +41,7 @@ const Login = () => {
           <input onChange={(e) => setpwd_confirm(e.target.value)} placeholder='Confirm Password' type='password' /> <br /><br />
 
           <div style={password != pwd_confirm ? {} : { display: "none" }}>passwords don't match</div>
-          <button style={password != pwd_confirm ? { cursor: "not-allowed", pointerEvents: "none" } : {}} onClick={() => handleReg()}>register</button>
+          <button className='regbtn' style={password != pwd_confirm ? { cursor: "not-allowed", pointerEvents: "none" } : {}} onClick={() => handleReg()}>register</button>
         </div>
         {/* ################################### login form ################################### */}
         <div className='login_box'>
